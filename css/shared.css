@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Regular.eot');
+    src: url('../fonts/RedHatDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/RedHatDisplay-Regular.woff2') format('woff2'), url('../fonts/RedHatDisplay-Regular.woff') format('woff'), url('../fonts/RedHatDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Bold.eot');
+    src: url('../fonts/RedHatDisplay-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/RedHatDisplay-Bold.woff2') format('woff2'), url('../fonts/RedHatDisplay-Bold.woff') format('woff'), url('../fonts/RedHatDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('../fonts/RedHatDisplay-Medium.eot');
+    src: url('../fonts/RedHatDisplay-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/RedHatDisplay-Medium.woff2') format('woff2'), url('../fonts/RedHatDisplay-Medium.woff') format('woff'), url('../fonts/RedHatDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::after,
+::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Red Hat Display', Roboto, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+.button,
+.main-navigation__links a,
+.main-navigation__menu svg,
+.section-bottom__rule,
+.section-subtitle,
+.section-title,
+input {
+    font-family: 'Red Hat Display'
+}
+
+.button,
+.footer,
+.text-center {
+    text-align: center
+}
+
+body::-moz-selection {
+    background-color: #8643dc;
+    color: #fff
+}
+
+body::selection {
+    background-color: #8643dc;
+    color: #fff
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden
+}
+
+a {
+    text-decoration: none
+}
+
+li,
+ul {
+    list-style: none
+}
+
+.container {
+    width: 71.25rem;
+    margin: 0 auto
+}
+
+.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.button {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .875rem 3rem;
+    border-radius: 6.25rem;
+    background: #8643dc;
+    border: 1px solid #8643dc;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    cursor: pointer
+}
+
+.button:hover {
+    background: #fff;
+    color: #8643dc
+}
+
+.button:active {
+    color: #fff;
+    background: #8643dc
+}
+
+.section-subtitle {
+    color: #8643dc;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 1rem
+}
+
+.section-bottom__rule {
+    width: 3.125rem;
+    height: .125rem;
+    background: #8643dc
+}
+
+.section-title {
+    color: #25202f;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 1rem
+}
+
+.main-navigation {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    padding: 2rem 0
+}
+
+.main-navigation__brand img {
+    width: 3rem;
+    height: 3rem
+}
+
+.main-navigation__links {
+    padding-left: 6.75rem
+}
+
+.main-navigation__links a {
+    color: #7e7f86;
+    font-size: 1.25rem;
+    padding: 0 2rem;
+    font-weight: 500;
+    -webkit-transition: color .4s ease-in-out;
+    -o-transition: color .4s ease-in-out;
+    transition: color .4s ease-in-out
+}
+
+.main-navigation__links a.active,
+.main-navigation__links a:hover {
+    color: #25202f
+}
+
+.main-navigation__menu svg {
+    width: 4.375rem;
+    height: 4.375rem;
+    padding: 1.25rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 15px #e9e9e9;
+    box-shadow: 0 0 15px #e9e9e9;
+    cursor: pointer;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out
+}
+
+.contact-section {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-8.54%, rgba(187, 133, 255, .17)), to(rgba(255, 244, 251, .2)));
+    background: -o-linear-gradient(top, rgba(187, 133, 255, .17) -8.54%, rgba(255, 244, 251, .2) 100%);
+    background: linear-gradient(180deg, rgba(187, 133, 255, .17) -8.54%, rgba(255, 244, 251, .2) 100%);
+    padding: 2rem 0
+}
+
+.contact-email {
+    color: #8643dc;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-transform: lowercase
+}
+
+.contact-title {
+    width: 34rem;
+    height: 9.75rem
+}
+
+input {
+    width: 100%;
+    margin: .5rem 0;
+    padding: 1.5rem 0;
+    background-color: transparent;
+    border-bottom: 1px solid #dad2e3;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    color: #a8a0b0;
+    font-size: 1.25rem;
+    font-weight: 400
+}
+
+.stall:nth-child(3) {
+    margin-bottom: 1.5rem
+}
+
+input:focus {
+    outline: 0
+}
+
+.contact-submit img {
+    margin-right: 1.5rem;
+    cursor: pointer
+}
+
+.contact-submit i {
+    color: #8643dc;
+    cursor: pointer
+}
+
+.footer {
+    padding: 2.5rem 0
+}
+
+.footer-image-box img {
+    cursor: pointer;
+    padding: 0 1.5rem
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width:992px) {
+    html {
+        font-size: 12px
+    }
+    .section-bottom__rule {
+        margin: 0 auto
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 10px
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .main-navigation__links {
+        display: none
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .contact-title {
+        width: auto
+    }
+}
